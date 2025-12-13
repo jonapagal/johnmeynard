@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Meynard Napagal | Student Portfolio</title>
+<style>
+    body {
+        font-family: 'Helvetica', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+    }
+
+    header {
+        position: relative;
+        background: linear-gradient(90deg, #0b3d0b, #2e7d32);
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    /* PROFILE IMAGE */
+    .profile-pic {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    header p {
+        margin: 10px 0 0 0;
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+
+    header a {
+        color: #ffe;
+        margin: 0 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    header a:hover {
+        color: #fff;
+        text-shadow: 0 0 5px #fff;
+    }
+
+    nav {
+        background-color: #fff;
+        padding: 12px 20px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: #0b3d0b;
+        font-weight: 600;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+        color: #2e7d32;
+        transform: scale(1.1);
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 40px auto;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        transition: transform 0.3s;
+    }
+
+    section:hover {
+        transform: translateY(-5px);
+    }
+
+    h2 {
+        color: #0b3d0b;
+        border-bottom: 3px solid #2e7d32;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 2em;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 25px;
+    }
+
+    .skills, .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .skill, .project {
+        flex: 1 1 250px;
+        background: linear-gradient(135deg, #2e7d32, #0b3d0b);
+        color: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill:hover, .project:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: linear-gradient(90deg, #0b3d0b, #2e7d32);
+        color: #fff;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="Pic.jpg" class="profile-pic" alt="Profile Picture">
+    <h1>John Meynard Napagal</h1>
+    <p>Email: john.meynard@example.com<br>
+       Phone: +63 912 345 6789<br>
+       <a href="#">Portfolio</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student who enjoys learning new technologies and building simple projects...</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>Camarines Sur Polytechnic College</strong> – Bachelor of Science in Computer Science</p>
+    <ul>
+        <li>Relevant Courses: Introduction to Computing, Fundamentals of Programming, Linear Algebra</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Academic Projects</h2>
+    <div class="projects">
+        <div class="project"><strong>Mini Machine</strong><p>(Cash Change Dispenser)</p></div>
+        <div class="project"><strong>Personal Portfolio Website</strong><p>Created using HTML, CSS, JS</p></div>
+        <div class="project"><strong>3D Model</strong><p>Capsule-like 3D Shape</p></div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill"><strong>Technical:</strong><p>Python, HTML/CSS</p></div>
+        <div class="skill"><strong>Soft Skills:</strong><p>Teamwork, Communication, Time Management</p></div>
+    </div>
+</section>
+
+<footer></footer>
+
+</body>
+</html>
